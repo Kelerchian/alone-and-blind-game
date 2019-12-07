@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Afraid and Blind
+        </title>
+        <link rel="icon" href="logo.png">
+        <style>
+            body{
+                background: #080808;
+                text-align: center;
+                font-family: myriad pro, sans-serif;
+                font-size: 1em;
+                vertical-align: middle;
+            }
+            li{
+                list-style-type: none;
+            }
+            #Canvas{                
+                display: inline-block;
+                border: 1px solid white;
+                margin: auto;
+            }
+            div.buttonshare{
+                position: relative;
+                top: 4px;
+                display: inline-block;
+                padding: auto;
+                width: 100px;
+                height: 15px;
+                border: 0px;
+            }
+            div{
+                margin: auto;
+                border: 1px solid white;
+                color: white;
+            }
+            div#description{
+                width: 50%;
+                padding: 2%;
+            }
+            div.button{
+                display: inline-block;
+                padding: auto;
+                width: 100px;
+                height: 15px;
+                color: white;
+                background: #000000;
+                border: 2px solid white;
+            }
+            div.button:hover{
+                cursor: pointer;
+                background: #cccccc;
+                color: black;
+            }
+            #howto span{
+                display: block;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <canvas height="600" width="400" id="Canvas"></canvas><br>
+        <div class="button" id="descbtn">description</div>
+        <div id="sharebutton" class="buttonshare">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lala-yeye.com" data-text="Let's Play Alone and Blind" data-hashtags="AloneAndBlind">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+        <div id="description">
+            <p>You're stumbling in the darkness. Your hand reach the control of the little arm on your ship, grabbing anything useful flying past. Amidst the destruction, you mend your ship, your vessel. The faithful radar is your guide, as eyes sees nothing beyond the vast mist. Your ship is drifting faster and faster toward the rogue gravity. Peebles, Rock, Asteroids angers toward you as you strive to find a place to live one more second. And you know, but even though a bit unsure, something's watching you.</p>
+            <p>Alone and Blind</p>
+            <p>Through the storm of eternal nights.</p>
+        <div class="button" id="howtobtn">how to play</div>
+        <div id="howto">
+            <span>A and D or left arrow and right arrow to maneuver!</span>
+            <span>Click item to buy, spend wisely!</span>
+            <span>Materials are scarce, spend wisely!</span>
+            <span>Avoid Asteroids!</span>
+            <span>Get blue materials!</span>
+            <span>Shields are trustful, ammo is necessary.</span>
+            <span>UFOs won't leave, you have to kill it.</span>
+            <span>You're drifting faster and faster. Be wary!</span>
+            <span>Believe nothing in nebulae. It lies.</span>
+            <span>Don't take risks, life isn't cheap.</span>
+            <span>Never give up, even in death.</span>
+        </div>
+        </div>
+        <script type="text/javascript" src="Alone and Blind.js">
+        </script>
+        <script type="text/javascript">
+            var d = document.getElementById("description");
+            var h = document.getElementById("howto");
+            d.style.display="none"
+            h.style.display="none"
+            document.getElementById("descbtn").onclick=function(){
+                if(d.style.display=="none"){
+                    d.style.display="block";
+                }
+                else if(d.style.display=="block"){
+                    d.style.display="none";
+                }
+            }
+            document.getElementById("howtobtn").onclick=function(){
+                if(h.style.display=="none"){
+                    h.style.display="block";
+                }
+                else if(h.style.display=="block"){
+                    h.style.display="none";
+                }
+            }
+        </script>
+        
+       
+    </body>
+</html>
